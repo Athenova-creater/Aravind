@@ -1,2 +1,14 @@
-creater test.txt
-creating test.txt
+import pandas as pd
+
+# Create a sample dataset
+data = {
+    'UserID': [1, 2, 3, 4],
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Email': ['alice@example.com', 'bob@example.com', 'charlie@example.com', 'david@example.com'],
+    'Age': [25, 30, 35, 40]
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+print("Original Data:")
+print(df)
